@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Video Streaming</title>
+  <!-- Link to the css file -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Add all material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Add Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Roboto:ital,wght@1,300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="video-container">
+    <video id="video" controls autoplay muted></video>
+    <div class="controls">
+      <span class="circle" id="mute-button" onclick="toggleMute()"><i class="material-icons" style="font-size:36px; color: white;">volume_up</i></span>
+      <span class="circle" id="record-button" onclick="toggleRecord()"><i class="material-icons" style="font-size:36px; color: white;">videocam</i></span>
+
+      <!-- <div class="mute-button" onclick="toggleMute()">Mute</div>
+      <div class="record-button" onclick="toggleRecord()">Record</div> -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
